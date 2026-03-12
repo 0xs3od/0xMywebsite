@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import profileImg from "@/assets/profile-placeholder.png";
 
-const tags = ["#######", "#######", "#######", "#######", "#######"];
+const tags = ["AA", "CC", "VV", "DD", "DD"];
 
 const HeroSection = () => {
   return (
