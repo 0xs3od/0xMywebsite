@@ -16,7 +16,7 @@ const HeroSection = () => {
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-none">
             <span className="text-primary text-glow-red">Saud</span>
             <br />
-            <span className="text-foreground"></span>
+            <span className="text-foreground">Alharbi</span>
           </h1>
 
           <p className="mt-4 text-lg font-mono text-muted-foreground">> Pentester | Cybersecurity
