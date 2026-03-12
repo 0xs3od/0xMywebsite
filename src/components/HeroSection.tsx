@@ -19,7 +19,8 @@ const HeroSection = () => {
             <span className="text-foreground">Alharbi</span>
           </h1>
 
-          <p className="mt-4 text-lg font-mono text-muted-foreground">> Pentester | Cybersecurity
+          <p className="mt-4 text-lg font-mono text-muted-foreground">
+            {">"} Pentester | Cybersecurity
             <span className="text-primary">{">"}</span> ####### | #######
             <span className="typing-cursor"></span>
           </p>
@@ -73,8 +74,8 @@ const HeroSection = () => {
           </div>
         </motion.div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default HeroSection;
