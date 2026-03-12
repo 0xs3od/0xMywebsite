@@ -9,8 +9,8 @@ const TerminalBlock = () => {
           initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex-1 w-full"
-        >
+          className="flex-1 w-full">
+          
           <div className="bg-terminal-bg border border-border rounded-lg overflow-hidden">
             <div className="flex items-center gap-2 px-4 py-3 border-b border-border">
               <span className="w-3 h-3 rounded-full bg-primary/60"></span>
@@ -19,8 +19,8 @@ const TerminalBlock = () => {
             </div>
             <div className="p-4 font-mono text-sm space-y-1">
               <p>
-                <span className="text-accent">root@user:~#</span>{" "}
-                <span className="text-cyber-orange">./init_protocol.sh</span>
+                <span className="text-primary">root@s3od:~#</span>{" "}
+                <span className="text-accent">./init_protocol.sh</span>
               </p>
               <p className="text-muted-foreground">{">"} Initializing Red Team protocol...</p>
               <p className="text-muted-foreground">{">"} Target acquired [192.168.1.X]</p>
@@ -39,8 +39,8 @@ const TerminalBlock = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="card-cyber px-6 py-4 flex items-center gap-3 hover:border-primary/40"
-          >
+            className="card-cyber px-6 py-4 flex items-center gap-3 hover:border-primary/40">
+            
             <span className="text-primary font-mono text-lg">{">"}_</span>
             <div className="text-left">
               <div className="text-xs text-muted-foreground tracking-wider">SYSTEM</div>
@@ -52,8 +52,8 @@ const TerminalBlock = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.15 }}
-            className="card-cyber px-6 py-4 flex items-center gap-3 hover:border-primary/40"
-          >
+            className="card-cyber px-6 py-4 flex items-center gap-3 hover:border-primary/40">
+            
             <span className="text-primary text-lg">⊞</span>
             <div className="text-left">
               <div className="text-xs text-muted-foreground tracking-wider">START MENU</div>
@@ -62,8 +62,8 @@ const TerminalBlock = () => {
           </motion.button>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default TerminalBlock;
