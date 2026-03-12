@@ -139,4 +139,122 @@
     -webkit-mask-composite: xor;
     mask-composite: exclude;
   }
+
+  /* Rotating border animation for profile image */
+  .rotating-border {
+    position: relative;
+  }
+
+  .rotating-border::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    background: conic-gradient(
+      from var(--rotation, 0deg),
+      hsl(var(--cyber-red)),
+      transparent 40%,
+      transparent 60%,
+      hsl(var(--cyber-red))
+    );
+    animation: rotate-border 3s linear infinite;
+    z-index: -1;
+  }
+
+  .rotating-border::after {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: 50%;
+    background: hsl(var(--background));
+    z-index: -1;
+  }
+
+  @keyframes rotate-border {
+    to { --rotation: 360deg; }
+  }
+
+  @property --rotation {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  /* Glitch text effect */
+  .glitch-text {
+    position: relative;
+  }
+
+  .glitch-text:hover {
+    animation: glitch-skew 0.5s ease-in-out;
+  }
+
+  @keyframes glitch-skew {
+    0% { transform: skew(0deg); }
+    20% { transform: skew(-2deg); }
+    40% { transform: skew(2deg); }
+    60% { transform: skew(-1deg); }
+    80% { transform: skew(1deg); }
+    100% { transform: skew(0deg); }
+  }
+
+  /* Custom interactive cursor */
+  .interactive-cursor {
+    cursor: none;
+  }
+
+  /* Scan line effect */
+  .scan-line::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, hsl(var(--cyber-red) / 0.5), transparent);
+    animation: scan 3s linear infinite;
+  }
+
+  @keyframes scan {
+    0% { top: 0; }
+    100% { top: 100%; }
+  }
+
+  /* Interactive tag hover */
+  .tag-interactive {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tag-interactive::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, hsl(var(--cyber-red) / 0.1), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+  }
+
+  .tag-interactive:hover::before {
+    transform: translateX(100%);
+  }
+
+  /* Magnetic button effect */
+  .magnetic-hover {
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  .magnetic-hover:hover {
+    transform: scale(1.05);
+  }
+
+  /* Floating animation */
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
 }
