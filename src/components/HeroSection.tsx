@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import profileImg from "@/assets/profile-placeholder.png";
 
-const tags = ["#######", "#######", "#######", "#######", "#######"];
+const tags = ["AA", "CC", "VV", "DD", "DD"];
 
 const HeroSection = () => {
   return (
@@ -16,10 +16,11 @@ const HeroSection = () => {
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-none">
             <span className="text-primary text-glow-red">Saud</span>
             <br />
-            <span className="text-foreground"></span>
+            <span className="text-foreground">Alharbi</span>
           </h1>
 
-          <p className="mt-4 text-lg font-mono text-muted-foreground">> Pentester | Cybersecurity
+          <p className="mt-4 text-lg font-mono text-muted-foreground">
+            {">"} Pentester | Cybersecurity
             <span className="text-primary">{">"}</span> ####### | #######
             <span className="typing-cursor"></span>
           </p>
@@ -73,8 +74,8 @@ const HeroSection = () => {
           </div>
         </motion.div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default HeroSection;
