@@ -21,10 +21,41 @@ const writeups = [
   },
 ];
 
+const FloatingBubbles = () => (
+  <>
+    {[...Array(8)].map((_, i) => (
+      <motion.div
+        key={i}
+        className="absolute rounded-full bg-primary/5 border border-primary/10"
+        style={{
+          width: 8 + i * 6,
+          height: 8 + i * 6,
+          left: `${10 + i * 12}%`,
+          top: `${15 + (i % 4) * 20}%`,
+        }}
+        animate={{
+          y: [0, -20 - i * 5, 0],
+          x: [0, Math.sin(i * 0.8) * 15, 0],
+          opacity: [0.15, 0.4, 0.15],
+          scale: [1, 1.2, 1],
+        }}
+        transition={{
+          duration: 5 + i * 0.7,
+          repeat: Infinity,
+          delay: i * 0.4,
+          ease: "easeInOut",
+        }}
+      />
+    ))}
+  </>
+);
+
 const WriteupsSection = () => {
   return (
-    <section id="writeups" className="px-6 py-20">
-      <div className="max-w-6xl mx-auto">
+    <section id="writeups" className="px-6 py-20 relative overflow-hidden">
+      <FloatingBubbles />
+
+      <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -57,22 +88,35 @@ const WriteupsSection = () => {
           {writeups.map((item, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 8 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 20, rotateX: 5 }}
+              whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.05 }}
+              transition={{ delay: i * 0.1, type: "spring", stiffness: 150 }}
+              whileHover={{
+                y: -8,
+                boxShadow: "0 0 25px hsl(var(--glow-red) / 0.15)",
+                borderColor: "hsl(var(--primary) / 0.5)",
+              }}
               className="card-cyber p-6 group cursor-pointer"
             >
-              <span className="text-[10px] font-mono tracking-wider text-primary bg-primary/10 px-2 py-1 rounded">
+              <motion.span
+                className="text-[10px] font-mono tracking-wider text-primary bg-primary/10 px-2 py-1 rounded inline-block"
+                whileHover={{ scale: 1.1 }}
+              >
                 {item.category}
-              </span>
+              </motion.span>
               <h3 className="text-lg font-semibold mt-4 mb-2 text-foreground group-hover:text-primary transition-colors">
                 {item.title}
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">{item.description}</p>
               <div className="flex items-center justify-between pt-4 border-t border-border">
                 <span className="text-xs text-muted-foreground">{item.date}</span>
-                <span className="text-[10px] font-mono tracking-wider text-primary">READ PROTOCOLS</span>
+                <motion.span
+                  className="text-[10px] font-mono tracking-wider text-primary"
+                  whileHover={{ x: 4 }}
+                >
+                  READ PROTOCOLS →
+                </motion.span>
               </div>
             </motion.div>
           ))}
@@ -84,9 +128,13 @@ const WriteupsSection = () => {
           viewport={{ once: true }}
           className="mt-8 text-center"
         >
-          <button className="text-sm font-mono text-primary hover:underline underline-offset-4">
+          <motion.button
+            whileHover={{ scale: 1.05, color: "hsl(var(--primary))" }}
+            whileTap={{ scale: 0.95 }}
+            className="text-sm font-mono text-primary hover:underline underline-offset-4"
+          >
             View the complete library →
-          </button>
+          </motion.button>
         </motion.div>
       </div>
     </section>
