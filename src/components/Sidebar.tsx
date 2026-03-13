@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Home, FolderOpen, Award, Mail } from "lucide-react";
+import { Home, BookOpen, Award, GraduationCap, Mail } from "lucide-react";
 
 const navItems = [
   { icon: Home, label: "Home", href: "#home" },
-  { icon: FolderOpen, label: "Write-ups", href: "#writeups" },
+  { icon: BookOpen, label: "Write-ups", href: "#writeups" },
   { icon: Award, label: "Certifications", href: "#certs" },
+  { icon: GraduationCap, label: "Academic", href: "#academic" },
   { icon: Mail, label: "Contact", href: "#contact" },
 ];
 
