@@ -6,7 +6,7 @@ const certs = [
   { name: "#######", abbr: "###", date: "####.##.##", status: "Completed" },
   { name: "#######", abbr: "###", date: "####.##.##", status: "Completed" },
   { name: "Object-Oriented Data Structures in C++", abbr: "University of Illinois", date: "2024.11.03", status: "Completed" },
-  { name: "#######", abbr: "###", date: "####.##.##", status: "In Progress" },
+  { name: "Introduction to Visual Basic Programming", abbr: "SIMMONS UNIVERSITY", date: "####.##.##", status: "In Progress" },
   { name: "#######", abbr: "###", date: "####.##.##", status: "In Progress" },
 ];
 
