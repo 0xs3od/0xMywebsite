@@ -1,11 +1,7 @@
 import Sidebar from "@/components/Sidebar";
 import HeroSection from "@/components/HeroSection";
-import TerminalBlock from "@/components/TerminalBlock";
-import ServicesSection from "@/components/ServicesSection";
 import WriteupsSection from "@/components/WriteupsSection";
 import CertsSection from "@/components/CertsSection";
-import CoursesSection from "@/components/CoursesSection";
-import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -24,12 +20,8 @@ const Index = () => {
 
       <main className="lg:ml-16 pt-16 lg:pt-0">
         <HeroSection />
-        <TerminalBlock />
-        <ServicesSection />
         <WriteupsSection />
         <CertsSection />
-        <CoursesSection />
-        <ProjectsSection />
         <ContactSection />
         <Footer />
       </main>
