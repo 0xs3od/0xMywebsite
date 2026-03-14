@@ -7,7 +7,7 @@ const tags = ["AA", "CC", "VV", "DD", "DD"];
 const nameText = "Saud";
 const codeText = "<Saud/>";
 const lastNameText = "Alharbi";
-const codeLastName = "{Alharbi}";
+const codeLastName = "{0xAlharbi}";
 
 const HeroSection = () => {
   const [nameHovered, setNameHovered] = useState(false);
