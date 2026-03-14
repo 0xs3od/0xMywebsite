@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import profileImg from "@/assets/profile-placeholder.png";
 
-const tags = ["AA", "CC", "VV", "DD", "DD"];
+const tags = ["Pentester", "IT", "Junior", "Learner", "S3"];
 
 const nameText = "Saud";
 const codeText = "<Saud/>";
