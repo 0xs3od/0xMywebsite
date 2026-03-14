@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { Award, ShieldCheck, ExternalLink } from "lucide-react";
 
 const certs = [
-  { name: "#######", abbr: "###", date: "####.##.##", status: "Completed" },
-  { name: "#######", abbr: "###", date: "####.##.##", status: "Completed" },
-  { name: "#######", abbr: "###", date: "####.##.##", status: "Completed" },
+  { name: "Network Security", abbr: "ISC2", date: "2025.11.11", status: "Completed" },
+  { name: "Relational Database Administration (DBA)", abbr: "IBM", date: "2025.04.20", status: "Completed" },
+  { name: "Build Your Professional ePortfolio in English", abbr: "Georgia Institute of Technology", date: "2023.11.29", status: "Completed" },
   { name: "Object-Oriented Data Structures in C++", abbr: "University of Illinois", date: "2024.11.03", status: "Completed" },
-  { name: "Introduction to Visual Basic Programming", abbr: "SIMMONS UNIVERSITY", date: "####.##.##", status: "In Progress" },
-  { name: "#######", abbr: "###", date: "####.##.##", status: "In Progress" },
+  { name: "Introduction to Visual Basic Programming", abbr: "SIMMONS UNIVERSITY", date: "####.##.##", status: "Completed" },
+  { name: "Data Structures", abbr: "University of California San Diego", date: "2025.04.26", status: "Completed" },
 ];
 
 const FloatingBubbles = () => (
