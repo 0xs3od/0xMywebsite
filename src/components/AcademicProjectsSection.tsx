@@ -80,7 +80,7 @@ const AcademicProjectsSection = () => {
           viewport={{ once: true }}
           className="text-muted-foreground mb-10 max-w-2xl"
         >
-          ####### ####### ####### ####### ####### ####### ####### #######.
+          A collection of hands-on academic projects built during university coursework.
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
