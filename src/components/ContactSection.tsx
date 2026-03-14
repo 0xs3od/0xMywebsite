@@ -1,14 +1,20 @@
 import { motion } from "framer-motion";
 import { Mail, Linkedin, MapPin } from "lucide-react";
 
-const socials = [
-{ name: "LinkedIn", href: "#" },
-{ name: "X (Twitter)", href: "#" },
-{ name: "TikTok", href: "#" },
-{ name: "Instagram", href: "#" },
-{ name: "YouTube", href: "#" },
-{ name: "Email", href: "#" }];
+const contactInfo = {
+  email: "0xs3od@gmail.com",
+  linkedin: { name: "Saud Alharbi", url: "https://www.linkedin.com/in/" },
+  location: "Kingdom of Saudi Arabia",
+};
 
+const socials = [
+  { name: "LinkedIn", href: contactInfo.linkedin.url },
+  { name: "X (Twitter)", href: "#" },
+  { name: "TikTok", href: "#" },
+  { name: "Instagram", href: "#" },
+  { name: "YouTube", href: "#" },
+  { name: "Email", href: `mailto:${contactInfo.email}` },
+];
 
 const ContactSection = () => {
   return (
@@ -21,7 +27,7 @@ const ContactSection = () => {
           
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Contact</h2>
           <p className="text-muted-foreground mb-12 max-w-xl">
-            Feel free to reach out for any inquiries or collaboration opportunities. I’d be happy to hear from you!
+            Feel free to reach out for any inquiries or collaboration opportunities. I'd be happy to hear from you!
           </p>
         </motion.div>
 
@@ -37,34 +43,37 @@ const ContactSection = () => {
           </div>
 
           <div className="space-y-4">
-            <a href="mailto:#######" className="flex items-center gap-3 text-sm text-foreground hover:text-primary transition-colors">
+            {/* Email */}
+            <a href={`mailto:${contactInfo.email}`} className="flex items-center gap-3 text-sm text-foreground hover:text-primary transition-colors">
               <Mail size={16} className="text-muted-foreground" />
               <div>
                 <div className="text-[10px] text-muted-foreground tracking-wider">E-mail</div>
-                <div>0xs3od@gmail.com</div>
+                <div>{contactInfo.email}</div>
               </div>
             </a>
 
-            <a href="#" className="flex items-center gap-3 text-sm text-foreground hover:text-primary transition-colors">
+            {/* LinkedIn */}
+            <a href={contactInfo.linkedin.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-foreground hover:text-primary transition-colors">
               <Linkedin size={16} className="text-muted-foreground" />
               <div>
                 <div className="text-[10px] text-muted-foreground tracking-wider">LinkedIn</div>
-                <div>####### #######</div>
+                <div>{contactInfo.linkedin.name}</div>
               </div>
             </a>
 
+            {/* Location */}
             <div className="flex items-center gap-3 text-sm text-foreground">
               <MapPin size={16} className="text-muted-foreground" />
               <div>
                 <div className="text-[10px] text-muted-foreground tracking-wider">Location</div>
-                <div>Kingdom of
-Saudi Arabia 
- </div>
+                <div>{contactInfo.location}</div>
               </div>
             </div>
           </div>
         </motion.div>
       </div>
-    </section>);};
+    </section>
+  );
+};
 
 export default ContactSection;
