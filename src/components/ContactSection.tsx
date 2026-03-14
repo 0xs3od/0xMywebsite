@@ -57,7 +57,7 @@ const ContactSection = () => {
               className="flex items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border hover:border-primary/40 transition-all group"
             >
               <div className="w-9 h-9 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
-                <Linkedin size={16} className="text-primary" />
+                <Linkedin size={16} className="text-blue-600" />
               </div>
               <div className="text-left flex-1 min-w-0">
                 <div className="text-[10px] uppercase text-muted-foreground tracking-widest font-mono">LinkedIn</div>
