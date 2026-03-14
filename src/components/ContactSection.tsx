@@ -56,7 +56,7 @@ const ContactSection = () => {
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border hover:border-primary/40 transition-all group"
             >
-              <div className="w-9 h-9 rounded-lg bg-primary/10 border border-blue-300 flex items-center justify-center shrink-0">
+              <div className="w-9 h-9 rounded-lg bg-blue/10 border border-blue-10 flex items-center justify-center shrink-0">
                 <Linkedin size={16} className="text-blue-600" />
               </div>
               <div className="text-left flex-1 min-w-0">
