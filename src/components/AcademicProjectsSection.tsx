@@ -3,34 +3,18 @@ import { GraduationCap, ExternalLink, Github } from "lucide-react";
 
 const academicProjects = [
   {
-    title: "####### #######",
-    course: "####### #######",
-    description: "####### ####### ####### ####### ####### ####### ####### #######.",
-    tech: ["#######", "#######", "#######"],
+    title: "Algorithm-Based Programming Projects",
+    course: "Visual Programming",
+    description: "• Developed multiple small applications implementing various algorithms and logical solutions • Built programs for calculations, data processing, and decision-making • Applied control structures, loops, conditions, and functions • Used both VB.NET and C++ to implement and test algorithms",
+    tech: ["VB.NET", "VB"],
     date: "2026",
     link: "#",
   },
   {
-    title: "####### #######",
-    course: "####### #######",
-    description: "####### ####### ####### ####### ####### ####### #######.",
-    tech: ["#######", "#######"],
-    date: "2025",
-    link: "#",
-  },
-  {
-    title: "####### #######",
-    course: "####### #######",
-    description: "####### ####### ####### ####### ####### #######.",
-    tech: ["#######", "#######", "#######"],
-    date: "2025",
-    link: "#",
-  },
-  {
-    title: "####### #######",
-    course: "####### #######",
-    description: "####### ####### ####### ####### ####### ####### #######.",
-    tech: ["#######", "#######"],
+    title: "User & Data Management Systems",
+    course: "Programming",
+    description: "• Created systems to manage users, courses, and records • Implemented Add, Delete, Update, and Search functionalities • Applied object-oriented programming (OOP) using classes • Focused on data validation and program flow control",
+    tech: ["C++", "VB.NET", "SQL"],
     date: "2025",
     link: "#",
   },
@@ -96,7 +80,7 @@ const AcademicProjectsSection = () => {
           viewport={{ once: true }}
           className="text-muted-foreground mb-10 max-w-2xl"
         >
-          ####### ####### ####### ####### ####### ####### ####### #######.
+          A collection of hands-on academic projects built during university coursework.
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
