@@ -13,7 +13,7 @@ const academicProjects = [
 {
   title: "User & Data Management Systems",
   course: "Programming",
-  description: "• Created systems to manage users, courses, and records • Implemented Add, Delete, Update, and Search functionalities • Applied object-oriented programming (OOP) using classes • Focused on data validation and program flow control",
+  description: "• Created systems to manage users, courses, and records        \n• Implemented Add, Delete, Update, and Search functionalities\n• Applied object-oriented programming (OOP) using classes \n• Focused on data validation and program flow control",
   tech: ["C++", "VB.NET", "SQL"],
   date: "2025",
   link: "#"
