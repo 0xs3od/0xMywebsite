@@ -17,7 +17,7 @@ const Footer = () => {
           ))}
         </div>
         <p className="text-xs text-muted-foreground font-mono">
-          © {new Date().getFullYear()} #######. All rights reserved.
+          © {new Date().getFullYear()} 0xS3od. All rights reserved.
         </p>
       </div>
     </footer>
