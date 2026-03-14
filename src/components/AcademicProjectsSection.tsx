@@ -5,7 +5,7 @@ const academicProjects = [
 {
   title: "Algorithm-Based Programming Projects",
   course: "Visual Programming",
-  description: "• Developed multiple small applications implementing various algorithms and logical solutions • Built programs for calculations, data processing, and decision-making • Applied control structures, loops, conditions, and functions • Used both VB.NET and C++ to implement and test algorithms",
+  description: "• Developed multiple small applications implementing various algorithms and logical solutions \n• Built programs for calculations, data processing, and decision-making \n• Applied control structures, loops, conditions, and functions \n• Used both VB.NET and C++ to implement and test algorithms",
   tech: ["VB.NET", "VB"],
   date: "2026",
   link: "#"
