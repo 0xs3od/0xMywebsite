@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 import { Mail, Linkedin, MapPin } from "lucide-react";
 
 const socials = [
-  { name: "LinkedIn", href: "#" },
-  { name: "X (Twitter)", href: "#" },
-  { name: "TikTok", href: "#" },
-  { name: "Instagram", href: "#" },
-  { name: "YouTube", href: "#" },
-  { name: "Email", href: "#" },
-];
+{ name: "LinkedIn", href: "#" },
+{ name: "X (Twitter)", href: "#" },
+{ name: "TikTok", href: "#" },
+{ name: "Instagram", href: "#" },
+{ name: "YouTube", href: "#" },
+{ name: "Email", href: "#" }];
+
 
 const ContactSection = () => {
   return (
@@ -17,11 +17,11 @@ const ContactSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
+          viewport={{ once: true }}>
+          
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Contact</h2>
           <p className="text-muted-foreground mb-12 max-w-xl">
-            ####### ####### ####### ####### ####### ####### ####### #######.
+            Feel free to reach out for any inquiries or collaboration opportunities. I’d be happy to hear from you!
           </p>
         </motion.div>
 
@@ -29,8 +29,8 @@ const ContactSection = () => {
           initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="card-cyber p-8 max-w-lg"
-        >
+          className="card-cyber p-8 max-w-lg">
+          
           <div className="flex items-center gap-2 mb-6">
             <h3 className="text-lg font-bold">Contact Me</h3>
             <span className="text-xs font-mono text-muted-foreground">/usr/bin/message</span>
@@ -41,7 +41,7 @@ const ContactSection = () => {
               <Mail size={16} className="text-muted-foreground" />
               <div>
                 <div className="text-[10px] text-muted-foreground tracking-wider">E-mail</div>
-                <div>#######@#######.com</div>
+                <div>0xs3od@gmail.com</div>
               </div>
             </a>
 
@@ -57,14 +57,14 @@ const ContactSection = () => {
               <MapPin size={16} className="text-muted-foreground" />
               <div>
                 <div className="text-[10px] text-muted-foreground tracking-wider">Location</div>
-                <div>####### #######</div>
+                <div>Kingdom of
+Saudi Arabia 
+ </div>
               </div>
             </div>
           </div>
         </motion.div>
       </div>
-    </section>
-  );
-};
+    </section>);};
 
 export default ContactSection;
