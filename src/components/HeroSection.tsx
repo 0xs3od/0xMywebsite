@@ -15,38 +15,8 @@ const HeroSection = () => {
   const [displayLastName, setDisplayLastName] = useState(lastNameText);
   const sectionRef = useRef<HTMLElement>(null);
 
-  // Custom cursor
-  const cursorX = useMotionValue(-100);
-  const cursorY = useMotionValue(-100);
-  const cursorSize = useMotionValue(16);
-  const springX = useSpring(cursorX, { stiffness: 500, damping: 28 });
-  const springY = useSpring(cursorY, { stiffness: 500, damping: 28 });
-  const springSize = useSpring(cursorSize, { stiffness: 300, damping: 20 });
-  const [cursorVisible, setCursorVisible] = useState(false);
 
-  useEffect(() => {
-    const section = sectionRef.current;
-    if (!section) return;
 
-    const handleMouseMove = (e: MouseEvent) => {
-      const rect = section.getBoundingClientRect();
-      cursorX.set(e.clientX - rect.left);
-      cursorY.set(e.clientY - rect.top);
-    };
-
-    const handleEnter = () => setCursorVisible(true);
-    const handleLeave = () => setCursorVisible(false);
-
-    section.addEventListener("mousemove", handleMouseMove);
-    section.addEventListener("mouseenter", handleEnter);
-    section.addEventListener("mouseleave", handleLeave);
-
-    return () => {
-      section.removeEventListener("mousemove", handleMouseMove);
-      section.removeEventListener("mouseenter", handleEnter);
-      section.removeEventListener("mouseleave", handleLeave);
-    };
-  }, [cursorX, cursorY]);
 
   // Scramble name on hover
   useEffect(() => {
