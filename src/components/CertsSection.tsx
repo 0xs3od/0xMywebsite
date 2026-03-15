@@ -3,7 +3,7 @@ import { Award, ShieldCheck, ExternalLink } from "lucide-react";
 
 const certs = [
   {
-    name: "Network Security",
+    name: "Network LOL Security",
     abbr: "ISC2",
     date: "2025.11.11",
     status: "Completed",
