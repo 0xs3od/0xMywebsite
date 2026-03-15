@@ -1,5 +1,6 @@
 import Sidebar from "@/components/Sidebar";
 import Background from "@/components/Background";
+import CursorTrail from "@/components/CursorTrail";
 import HeroSection from "@/components/HeroSection";
 import WriteupsSection from "@/components/WriteupsSection";
 import CertsSection from "@/components/CertsSection";

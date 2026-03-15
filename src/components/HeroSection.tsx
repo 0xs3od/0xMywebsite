@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import { motion } from "framer-motion";
 import profileImg from "@/assets/profile-placeholder.png";
 
 const tags = ["Pentester", "IT", "Junior", "Learner", "S3"];
