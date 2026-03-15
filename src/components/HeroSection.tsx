@@ -65,32 +65,8 @@ const HeroSection = () => {
       id="home"
       className="min-h-screen flex items-center py-20 px-6 relative overflow-hidden">
       
-      {/* Custom Cursor */}
-      <motion.div
-        className="pointer-events-none fixed z-[9999] rounded-full border-2 border-primary mix-blend-difference"
-        style={{
-          x: springX,
-          y: springY,
-          width: springSize,
-          height: springSize,
-          translateX: "-50%",
-          translateY: "-50%",
-          opacity: cursorVisible ? 1 : 0,
-          position: "absolute"
-        }} />
-      
-      <motion.div
-        className="pointer-events-none fixed z-[9999] rounded-full bg-primary"
-        style={{
-          x: springX,
-          y: springY,
-          width: 4,
-          height: 4,
-          translateX: "-50%",
-          translateY: "-50%",
-          opacity: cursorVisible ? 1 : 0,
-          position: "absolute"
-        }} />
+
+
       
 
       {/* Background grid */}
