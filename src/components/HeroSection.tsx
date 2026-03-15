@@ -63,7 +63,7 @@ const HeroSection = () => {
     <section
       ref={sectionRef}
       id="home"
-      className="min-h-screen flex items-center py-20 px-6 relative overflow-hidden interactive-cursor">
+      className="min-h-screen flex items-center py-20 px-6 relative overflow-hidden">
       
       {/* Custom Cursor */}
       <motion.div
