@@ -56,8 +56,8 @@ const HeroSection = () => {
     }
   }, [nameHovered]);
 
-  const handleInteractiveEnter = () => cursorSize.set(40);
-  const handleInteractiveLeave = () => cursorSize.set(16);
+
+
 
   return (
     <section
