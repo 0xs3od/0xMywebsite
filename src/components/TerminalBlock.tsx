@@ -32,6 +32,13 @@ const TerminalBlock = () => {
           </div>
         </motion.div>
 
+        const lines = [
+  { prefix: "root@d7m:~#", text: "./init_protocol.sh", color: "text-terminal-green" },
+  { prefix: ">", text: "Initializing Red Team protocol...", color: "text-muted-foreground" },
+  { prefix: ">", text: "Target acquired [192.168.1.X]", color: "text-muted-foreground" },
+  { prefix: ">", text: "Scanning ports...", color: "text-primary", cursor: true },
+];
+
         {/* Action Buttons */}
         <div className="flex gap-4">
           <motion.button
