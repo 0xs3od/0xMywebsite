@@ -5,7 +5,7 @@ const certs = [
   {
     name: "Network LO Security",
     abbr: "ISC2",
-    date: "2025.11.1111",
+    date: "2025.11.11",
     status: "Completed",
     link: "https://www.coursera.org/account/accomplishments/verify/T6TYK1SZHYGQ/"
   },
